@@ -20,10 +20,10 @@
 		E3AC1E7B2031A1D400492885 /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3AC1E7A2031A1D400492885 /* profile.storyboard */; };
 		E3AC1E7D2031B8DE00492885 /* studyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC1E7C2031B8DE00492885 /* studyViewController.swift */; };
 		E3AC1E7F2031C3D400492885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3AC1E7E2031C3D400492885 /* Assets.xcassets */; };
-		E3C2387C203ACDA3003361B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3C2387B203ACDA2003361B9 /* GoogleService-Info.plist */; };
 		E3C2387E203ACF2A003361B9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E3C2387D203ACF2A003361B9 /* Podfile */; };
 		ED5E2D7B8EE47506CA026FFA /* Pods_cau_studyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BD0CCB03A50C2632961C23 /* Pods_cau_studyTests.framework */; };
 		F03BB6CA590A94DBF5AF428A /* Pods_cau_study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE53369842444A82CB3B5AE /* Pods_cau_study.framework */; };
+		FE94CA96203ADE26007FF31D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE94CA95203ADE26007FF31D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,10 +69,10 @@
 		E3AC1E7A2031A1D400492885 /* profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
 		E3AC1E7C2031B8DE00492885 /* studyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyViewController.swift; sourceTree = "<group>"; };
 		E3AC1E7E2031C3D400492885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E3C2387B203ACDA2003361B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E3C2387D203ACF2A003361B9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		E45CDE75B2403FC0F61F9FDD /* Pods-cau_study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cau_study.release.xcconfig"; path = "Pods/Target Support Files/Pods-cau_study/Pods-cau_study.release.xcconfig"; sourceTree = "<group>"; };
 		F7BD0CCB03A50C2632961C23 /* Pods_cau_studyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cau_studyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE94CA95203ADE26007FF31D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +155,7 @@
 				E3AC1E44203197F000492885 /* ViewController.swift */,
 				E3AC1E4B203197F000492885 /* LaunchScreen.storyboard */,
 				E3AC1E4E203197F000492885 /* Info.plist */,
-				E3C2387B203ACDA2003361B9 /* GoogleService-Info.plist */,
+				FE94CA95203ADE26007FF31D /* GoogleService-Info.plist */,
 				E3C2387D203ACF2A003361B9 /* Podfile */,
 				E3AC1E7E2031C3D400492885 /* Assets.xcassets */,
 				E3AC1E732031A00B00492885 /* viewController */,
@@ -319,12 +319,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3AC1E4D203197F000492885 /* LaunchScreen.storyboard in Resources */,
-				E3C2387C203ACDA3003361B9 /* GoogleService-Info.plist in Resources */,
 				E3AC1E7B2031A1D400492885 /* profile.storyboard in Resources */,
 				E3AC1E772031A1C400492885 /* feed.storyboard in Resources */,
 				E3AC1E752031A1B200492885 /* explore.storyboard in Resources */,
 				E3AC1E7F2031C3D400492885 /* Assets.xcassets in Resources */,
 				E3C2387E203ACF2A003361B9 /* Podfile in Resources */,
+				FE94CA96203ADE26007FF31D /* GoogleService-Info.plist in Resources */,
 				E3AC1E792031A1CD00492885 /* notification.storyboard in Resources */,
 				E3AC1E722031994800492885 /* main.storyboard in Resources */,
 			);
