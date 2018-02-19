@@ -19,7 +19,7 @@ class studyViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.isHidden = true
-        self.navigationItem.title = "스터디그룹 love"
+        self.navigationItem.title = "스터디그룹 love love"
     }
     
     override func didReceiveMemoryWarning() {
