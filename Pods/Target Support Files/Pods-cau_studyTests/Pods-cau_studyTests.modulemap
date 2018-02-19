@@ -1,0 +1,6 @@
+framework module Pods_cau_studyTests {
+  umbrella header "Pods-cau_studyTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
