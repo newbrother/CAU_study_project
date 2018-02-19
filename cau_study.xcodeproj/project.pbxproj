@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		975115FBBEF1AF5A7537C232 /* Pods_cau_studyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F661FD08A796D2273212E66 /* Pods_cau_studyUITests.framework */; };
+		E3793CEC203AE38E0011A496 /* exploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3793CEB203AE38E0011A496 /* exploreViewController.swift */; };
 		E3AC1E43203197F000492885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC1E42203197F000492885 /* AppDelegate.swift */; };
 		E3AC1E45203197F000492885 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC1E44203197F000492885 /* ViewController.swift */; };
 		E3AC1E4D203197F000492885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3AC1E4B203197F000492885 /* LaunchScreen.storyboard */; };
@@ -51,6 +52,7 @@
 		88B904195E02829B443DA78E /* Pods-cau_studyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cau_studyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cau_studyTests/Pods-cau_studyTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F661FD08A796D2273212E66 /* Pods_cau_studyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cau_studyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE53369842444A82CB3B5AE /* Pods_cau_study.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cau_study.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3793CEB203AE38E0011A496 /* exploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exploreViewController.swift; sourceTree = "<group>"; };
 		E3AC1E3F203197EF00492885 /* cau_study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cau_study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3AC1E42203197F000492885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3AC1E44203197F000492885 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				E3AC1E7C2031B8DE00492885 /* studyViewController.swift */,
+				E3793CEB203AE38E0011A496 /* exploreViewController.swift */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3793CEC203AE38E0011A496 /* exploreViewController.swift in Sources */,
 				E3AC1E7D2031B8DE00492885 /* studyViewController.swift in Sources */,
 				E3AC1E45203197F000492885 /* ViewController.swift in Sources */,
 				E3AC1E43203197F000492885 /* AppDelegate.swift in Sources */,

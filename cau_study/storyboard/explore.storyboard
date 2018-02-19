@@ -10,11 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--explore-->
         <scene sceneID="MXX-1M-3nQ">
             <objects>
                 <navigationController storyboardIdentifier="navigationExplore" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XzL-h2-rBU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="Lca-26-cad"/>
+                    <tabBarItem key="tabBarItem" title="explore" id="Lca-26-cad"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aE0-ra-DEp">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -31,7 +31,7 @@
         <!--Explore-->
         <scene sceneID="fIu-tV-iys">
             <objects>
-                <viewController id="Kxb-A2-BPq" sceneMemberID="viewController">
+                <viewController id="Kxb-A2-BPq" customClass="exploreViewController" customModule="cau_study" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="whn-at-Nwf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
