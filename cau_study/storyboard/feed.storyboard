@@ -25,6 +25,16 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tw4-cb-oiG" id="UrZ-IW-9Rt">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ci-GX-218">
+                                            <rect key="frame" x="29" y="6" width="316" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button"/>
+                                            <connections>
+                                                <segue destination="Pi7-q0-Hu6" kind="show" id="yp0-S2-cnu"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -33,11 +43,89 @@
                             <outlet property="delegate" destination="EvX-jb-fCq" id="moQ-H5-wf5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Feed" id="T5C-Lg-2Ls"/>
+                    <navigationItem key="navigationItem" title="Feed" id="T5C-Lg-2Ls">
+                        <barButtonItem key="leftBarButtonItem" title="write" id="BxI-WN-3LK">
+                            <connections>
+                                <segue destination="pfr-Ej-SSW" kind="presentation" id="ZlM-ao-1va"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="search" id="10A-EK-O3x">
+                            <connections>
+                                <segue destination="NOw-FG-PLC" kind="presentation" id="vjO-wu-l6f"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0JR-vm-Jnl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="588" y="132"/>
+            <point key="canvasLocation" x="588" y="131.78410794602701"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="W8l-uj-58Q">
+            <objects>
+                <viewController id="NOw-FG-PLC" customClass="searchViewController" customModule="cau_study" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AO8-MY-VFb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FMT-Iv-fMZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Search" id="dF2-4O-6f4">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="USY-Nw-GdH">
+                                            <connections>
+                                                <action selector="close:" destination="vl3-OL-ayu" id="Xru-mv-RX2"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T4H-BH-GqE">
+                                <rect key="frame" x="0.0" y="44" width="375" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Mgf-n1-U0z"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c0t-As-SrV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="vl3-OL-ayu" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="837.93103448275872"/>
+        </scene>
+        <!--Writeviewcon View Controller-->
+        <scene sceneID="SF0-Zu-dNZ">
+            <objects>
+                <viewController id="pfr-Ej-SSW" customClass="writeviewconViewController" customModule="cau_study" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="75A-cR-UiW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JaP-xk-hdU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Write" id="UWv-bl-cCx">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="h0K-hh-5IH">
+                                            <connections>
+                                                <action selector="close:" destination="zjC-im-GjW" id="XAt-It-6R3"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nws-cC-Xle"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dlK-3d-yNk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zjC-im-GjW" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="-600"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eS6-z0-44P">
@@ -47,8 +135,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="wa" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gPl-SR-zPW">
-                                <rect key="frame" x="139" y="283" width="97" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="글 본문" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gPl-SR-zPW">
+                                <rect key="frame" x="139" y="191" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
