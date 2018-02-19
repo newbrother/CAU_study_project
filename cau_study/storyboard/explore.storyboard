@@ -156,13 +156,41 @@
                         <viewLayoutGuide key="safeArea" id="ga7-7O-KgD"/>
                     </view>
                     <navigationItem key="navigationItem" title="Explore" id="ljG-y4-4p0">
-                        <barButtonItem key="leftBarButtonItem" title="글쓰기" id="zQr-0t-Qed"/>
+                        <barButtonItem key="leftBarButtonItem" title="글쓰기" id="zQr-0t-Qed">
+                            <connections>
+                                <segue destination="vTn-LL-unT" kind="presentation" id="zsz-ob-VzU"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="메세지" id="BEy-EY-NCb"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W7O-JI-KDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-332" y="277.51124437781112"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eHr-Ve-Z5f">
+            <objects>
+                <viewController id="vTn-LL-unT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dny-u9-i6K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="title : " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8N3-ob-S50">
+                                <rect key="frame" x="20" y="32" width="334" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="XZw-bX-pCS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Llu-fW-r22" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-332" y="-391.75412293853077"/>
         </scene>
         <!--Study View Controller-->
         <scene sceneID="G4S-2J-Dj5">
