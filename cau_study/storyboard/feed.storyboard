@@ -10,61 +10,66 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Feed Writing View Controller-->
         <scene sceneID="wLr-cr-V6T">
             <objects>
-                <viewController id="6lh-rF-19H" sceneMemberID="viewController">
+                <viewController id="6lh-rF-19H" customClass="feedWritingViewController" customModule="cau_study" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aje-Xu-ZR8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTp-lp-kP8">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <items>
                                     <navigationItem title="Writing" id="2hZ-67-YDm">
-                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="CUA-w6-Rq1"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="CUA-w6-Rq1">
+                                            <connections>
+                                                <action selector="cancel_TouchUpInside:" destination="6lh-rF-19H" id="Wco-Oi-UhF"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Item" id="g5r-68-nkq"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKf-Vk-lS4">
-                                <rect key="frame" x="0.0" y="44" width="375" height="579"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyz-ih-ENe">
-                                        <rect key="frame" x="8" y="10" width="359" height="35"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyz-ih-ENe">
+                                        <rect key="frame" x="8" y="10" width="359" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="8Zq-3Z-qTG"/>
+                                            <constraint firstAttribute="height" constant="40" id="8Zq-3Z-qTG"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Category" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RWl-JT-Sgk">
-                                        <rect key="frame" x="8" y="52" width="359" height="35"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Category" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RWl-JT-Sgk">
+                                        <rect key="frame" x="8" y="57" width="359" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="Buq-PW-dkY"/>
+                                            <constraint firstAttribute="height" constant="40" id="Buq-PW-dkY"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1P-Bg-ZTG">
-                                        <rect key="frame" x="8" y="48" width="359" height="1"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="8" y="53" width="359" height="1"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="jHF-ui-xCV"/>
                                         </constraints>
                                     </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QQf-ir-kfY">
-                                        <rect key="frame" x="8" y="94" width="359" height="485"/>
+                                        <rect key="frame" x="8" y="104" width="359" height="455"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4kw-cH-yrY">
-                                        <rect key="frame" x="8" y="90" width="359" height="1"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="8" y="100" width="359" height="1"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="Lx4-3k-lHz"/>
                                         </constraints>
@@ -103,7 +108,7 @@
                         <constraints>
                             <constraint firstItem="DTh-BS-tkY" firstAttribute="trailing" secondItem="cTp-lp-kP8" secondAttribute="trailing" id="4tU-bL-nsN"/>
                             <constraint firstItem="DTh-BS-tkY" firstAttribute="top" secondItem="mKf-Vk-lS4" secondAttribute="bottom" id="FYL-1u-Nfc"/>
-                            <constraint firstItem="cTp-lp-kP8" firstAttribute="top" secondItem="Aje-Xu-ZR8" secondAttribute="top" id="Gvo-d6-Ucj"/>
+                            <constraint firstItem="cTp-lp-kP8" firstAttribute="top" secondItem="Aje-Xu-ZR8" secondAttribute="top" constant="20" id="Gvo-d6-Ucj"/>
                             <constraint firstItem="DTh-BS-tkY" firstAttribute="bottom" secondItem="E1l-ym-eor" secondAttribute="bottom" id="KIw-lF-fjf"/>
                             <constraint firstItem="mKf-Vk-lS4" firstAttribute="leading" secondItem="E1l-ym-eor" secondAttribute="leading" id="bxp-1C-PCV"/>
                             <constraint firstItem="DTh-BS-tkY" firstAttribute="leading" secondItem="cTp-lp-kP8" secondAttribute="leading" id="hNl-r0-KKh"/>
@@ -154,7 +159,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0JR-vm-Jnl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="588" y="132"/>
+            <point key="canvasLocation" x="588" y="131.78410794602701"/>
         </scene>
         <!--feed-->
         <scene sceneID="LdK-tN-AQV">
