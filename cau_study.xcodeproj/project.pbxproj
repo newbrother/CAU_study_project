@@ -10,8 +10,13 @@
 		975115FBBEF1AF5A7537C232 /* Pods_cau_studyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F661FD08A796D2273212E66 /* Pods_cau_studyUITests.framework */; };
 		E3793CEC203AE38E0011A496 /* exploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3793CEB203AE38E0011A496 /* exploreViewController.swift */; };
 		E3793D0020442FE90011A496 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3793CFF20442FE90011A496 /* Start.storyboard */; };
+		E3793D03204432AF0011A496 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3793D01204432AF0011A496 /* SignUpViewController.swift */; };
+		E3793D04204432AF0011A496 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3793D02204432AF0011A496 /* SignInViewController.swift */; };
+		E3793D09204436EB0011A496 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E3793D06204436EA0011A496 /* ProgressHUD.bundle */; };
+		E3793D0A204436EB0011A496 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E3793D08204436EB0011A496 /* ProgressHUD.m */; };
+		E3793D0D204437BD0011A496 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3793D0B204437BC0011A496 /* Config.swift */; };
+		E3793D1020443AD60011A496 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3793D0F20443AD50011A496 /* AuthService.swift */; };
 		E3AC1E43203197F000492885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC1E42203197F000492885 /* AppDelegate.swift */; };
-		E3AC1E45203197F000492885 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC1E44203197F000492885 /* ViewController.swift */; };
 		E3AC1E4D203197F000492885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3AC1E4B203197F000492885 /* LaunchScreen.storyboard */; };
 		E3AC1E58203197F000492885 /* cau_studyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC1E57203197F000492885 /* cau_studyTests.swift */; };
 		E3AC1E63203197F000492885 /* cau_studyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC1E62203197F000492885 /* cau_studyUITests.swift */; };
@@ -22,7 +27,6 @@
 		E3AC1E7B2031A1D400492885 /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3AC1E7A2031A1D400492885 /* profile.storyboard */; };
 		E3AC1E7D2031B8DE00492885 /* studyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC1E7C2031B8DE00492885 /* studyViewController.swift */; };
 		E3AC1E7F2031C3D400492885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3AC1E7E2031C3D400492885 /* Assets.xcassets */; };
-		E3C2387E203ACF2A003361B9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E3C2387D203ACF2A003361B9 /* Podfile */; };
 		ED5E2D7B8EE47506CA026FFA /* Pods_cau_studyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BD0CCB03A50C2632961C23 /* Pods_cau_studyTests.framework */; };
 		F03BB6CA590A94DBF5AF428A /* Pods_cau_study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE53369842444A82CB3B5AE /* Pods_cau_study.framework */; };
 		FE94CA96203ADE26007FF31D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE94CA95203ADE26007FF31D /* GoogleService-Info.plist */; };
@@ -55,9 +59,16 @@
 		BEE53369842444A82CB3B5AE /* Pods_cau_study.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cau_study.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3793CEB203AE38E0011A496 /* exploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exploreViewController.swift; sourceTree = "<group>"; };
 		E3793CFF20442FE90011A496 /* Start.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
+		E3793D01204432AF0011A496 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E3793D02204432AF0011A496 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		E3793D05204436EA0011A496 /* cau_study-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cau_study-Bridging-Header.h"; sourceTree = "<group>"; };
+		E3793D06204436EA0011A496 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		E3793D07204436EB0011A496 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		E3793D08204436EB0011A496 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		E3793D0B204437BC0011A496 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		E3793D0F20443AD50011A496 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		E3AC1E3F203197EF00492885 /* cau_study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cau_study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3AC1E42203197F000492885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E3AC1E44203197F000492885 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E3AC1E4C203197F000492885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3AC1E4E203197F000492885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3AC1E53203197F000492885 /* cau_studyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cau_studyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,7 +84,6 @@
 		E3AC1E7A2031A1D400492885 /* profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
 		E3AC1E7C2031B8DE00492885 /* studyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyViewController.swift; sourceTree = "<group>"; };
 		E3AC1E7E2031C3D400492885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E3C2387D203ACF2A003361B9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E45CDE75B2403FC0F61F9FDD /* Pods-cau_study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cau_study.release.xcconfig"; path = "Pods/Target Support Files/Pods-cau_study/Pods-cau_study.release.xcconfig"; sourceTree = "<group>"; };
 		F7BD0CCB03A50C2632961C23 /* Pods_cau_studyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cau_studyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE94CA95203ADE26007FF31D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -134,6 +144,10 @@
 			isa = PBXGroup;
 			children = (
 				E3AC1E41203197EF00492885 /* cau_study */,
+				E3793D06204436EA0011A496 /* ProgressHUD.bundle */,
+				E3793D07204436EB0011A496 /* ProgressHUD.h */,
+				E3793D08204436EB0011A496 /* ProgressHUD.m */,
+				E3793D05204436EA0011A496 /* cau_study-Bridging-Header.h */,
 				E3AC1E56203197F000492885 /* cau_studyTests */,
 				E3AC1E61203197F000492885 /* cau_studyUITests */,
 				E3AC1E40203197EF00492885 /* Products */,
@@ -156,11 +170,11 @@
 			isa = PBXGroup;
 			children = (
 				E3AC1E42203197F000492885 /* AppDelegate.swift */,
-				E3AC1E44203197F000492885 /* ViewController.swift */,
 				E3AC1E4B203197F000492885 /* LaunchScreen.storyboard */,
 				E3AC1E4E203197F000492885 /* Info.plist */,
 				FE94CA95203ADE26007FF31D /* GoogleService-Info.plist */,
-				E3C2387D203ACF2A003361B9 /* Podfile */,
+				E3793D0F20443AD50011A496 /* AuthService.swift */,
+				E3793D0B204437BC0011A496 /* Config.swift */,
 				E3AC1E7E2031C3D400492885 /* Assets.xcassets */,
 				E3AC1E732031A00B00492885 /* viewController */,
 				E3AC1E702031991200492885 /* storyboard */,
@@ -202,6 +216,8 @@
 		E3AC1E732031A00B00492885 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				E3793D02204432AF0011A496 /* SignInViewController.swift */,
+				E3793D01204432AF0011A496 /* SignUpViewController.swift */,
 				E3AC1E7C2031B8DE00492885 /* studyViewController.swift */,
 				E3793CEB203AE38E0011A496 /* exploreViewController.swift */,
 			);
@@ -285,6 +301,7 @@
 				TargetAttributes = {
 					E3AC1E3E203197EF00492885 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					E3AC1E52203197F000492885 = {
@@ -329,10 +346,10 @@
 				E3AC1E772031A1C400492885 /* feed.storyboard in Resources */,
 				E3AC1E752031A1B200492885 /* explore.storyboard in Resources */,
 				E3AC1E7F2031C3D400492885 /* Assets.xcassets in Resources */,
-				E3C2387E203ACF2A003361B9 /* Podfile in Resources */,
 				FE94CA96203ADE26007FF31D /* GoogleService-Info.plist in Resources */,
 				E3793D0020442FE90011A496 /* Start.storyboard in Resources */,
 				E3AC1E792031A1CD00492885 /* notification.storyboard in Resources */,
+				E3793D09204436EB0011A496 /* ProgressHUD.bundle in Resources */,
 				E3AC1E722031994800492885 /* main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,12 +408,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-cau_study/Pods-cau_study-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,10 +531,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3793D0A204436EB0011A496 /* ProgressHUD.m in Sources */,
 				E3793CEC203AE38E0011A496 /* exploreViewController.swift in Sources */,
 				E3AC1E7D2031B8DE00492885 /* studyViewController.swift in Sources */,
-				E3AC1E45203197F000492885 /* ViewController.swift in Sources */,
+				E3793D0D204437BD0011A496 /* Config.swift in Sources */,
+				E3793D04204432AF0011A496 /* SignInViewController.swift in Sources */,
 				E3AC1E43203197F000492885 /* AppDelegate.swift in Sources */,
+				E3793D03204432AF0011A496 /* SignUpViewController.swift in Sources */,
+				E3793D1020443AD60011A496 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,12 +697,15 @@
 			baseConfigurationReference = 4542853AE78691A89825851D /* Pods-cau_study.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = cau_study/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bro.cau-study";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "cau_study-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -688,12 +716,14 @@
 			baseConfigurationReference = E45CDE75B2403FC0F61F9FDD /* Pods-cau_study.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = cau_study/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bro.cau-study";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "cau_study-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

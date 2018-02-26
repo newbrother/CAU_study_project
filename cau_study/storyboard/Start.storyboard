@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="097-w8-9Hf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="097-w8-9Hf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Noteworthy.ttc">
+            <string>Noteworthy-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Sign In View Controller-->
         <scene sceneID="RI3-P6-dN8">
             <objects>
-                <viewController storyboardIdentifier="SignInViewController" id="097-w8-9Hf" customClass="SignInViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" id="097-w8-9Hf" customClass="SignInViewController" customModule="cau_study" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rdv-cb-WF9"/>
                         <viewControllerLayoutGuide type="bottom" id="kor-sC-4NC"/>
@@ -103,7 +108,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="zMU-I9-LHe">
             <objects>
-                <viewController id="VTE-tb-V8W" customClass="SignUpViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VTE-tb-V8W" customClass="SignUpViewController" customModule="cau_study" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XaW-FK-Oxh"/>
                         <viewControllerLayoutGuide type="bottom" id="GB4-9v-2XM"/>
@@ -216,6 +221,6 @@
         <image name="placeholderImg" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JRp-rs-fkO"/>
+        <segue reference="67q-py-SuJ"/>
     </inferredMetricsTieBreakers>
 </document>
