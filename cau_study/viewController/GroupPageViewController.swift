@@ -1,30 +1,21 @@
 //
-//  studyViewController.swift
+//  GroupPageViewController.swift
 //  cau_study
 //
-//  Created by 신형재 on 2018. 2. 12..
+//  Created by 강호현 on 2018. 2. 26..
 //  Copyright © 2018년 신형재. All rights reserved.
 //
 
 import UIKit
 
-class studyViewController: UIViewController {
+class GroupPageViewController: UIPageViewController {
 
-    @IBOutlet weak var backgroundImg: UIImageView!
-    @IBOutlet weak var pageControl: UIPageControl!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.tabBarController?.tabBar.isHidden = true
-        self.navigationItem.title = "스터디그룹"
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

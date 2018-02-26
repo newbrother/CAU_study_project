@@ -41,7 +41,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="더보기"/>
                                 <connections>
-                                    <segue destination="YK4-9Q-sQC" kind="show" id="QhA-qv-loR"/>
+                                    <segue destination="YK4-9Q-sQC" kind="show" id="wR4-fF-BLS"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="스터디그룹" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1AX-nw-SPm">
@@ -99,6 +99,9 @@
                                 <rect key="frame" x="142" y="340" width="39" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="더보기"/>
+                                <connections>
+                                    <segue destination="nin-0U-71x" kind="show" id="nNC-9G-eLG"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="교환과외" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Low-Cv-ToH">
                                 <rect key="frame" x="45" y="344" width="59" height="21"/>
@@ -158,7 +161,7 @@
                     <navigationItem key="navigationItem" title="Explore" id="ljG-y4-4p0">
                         <barButtonItem key="leftBarButtonItem" title="글쓰기" id="zQr-0t-Qed">
                             <connections>
-                                <segue destination="vTn-LL-unT" kind="presentation" id="zsz-ob-VzU"/>
+                                <segue destination="vTn-LL-unT" kind="show" id="Dqs-Km-H3l"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="메세지" id="BEy-EY-NCb"/>
@@ -168,7 +171,7 @@
             </objects>
             <point key="canvasLocation" x="-332" y="277.51124437781112"/>
         </scene>
-        <!--View Controller-->
+        <!--글쓰기-->
         <scene sceneID="eHr-Ve-Z5f">
             <objects>
                 <viewController id="vTn-LL-unT" sceneMemberID="viewController">
@@ -177,7 +180,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="title : " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8N3-ob-S50">
-                                <rect key="frame" x="20" y="32" width="334" height="30"/>
+                                <rect key="frame" x="20" y="93" width="334" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -187,10 +190,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="XZw-bX-pCS"/>
                     </view>
+                    <navigationItem key="navigationItem" title="글쓰기" id="BqM-nF-WEy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Llu-fW-r22" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-332" y="-391.75412293853077"/>
+            <point key="canvasLocation" x="662" y="-522"/>
         </scene>
         <!--Study View Controller-->
         <scene sceneID="G4S-2J-Dj5">
@@ -200,41 +204,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKU-t3-Tlc">
-                                <rect key="frame" x="109" y="233" width="157" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1231" translatesAutoresizingMaskIntoConstraints="NO" id="BvM-ym-vXf">
-                                <rect key="frame" x="81" y="349" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GettyImages-505752040" translatesAutoresizingMaskIntoConstraints="NO" id="bEd-qe-xh3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJl-Nt-OKP">
-                                <rect key="frame" x="147" y="134" width="77" height="43"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="f5q-UR-EZZ">
+                                <rect key="frame" x="168" y="548" width="39" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button2"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FxH-95-8N8">
-                                <rect key="frame" x="150" y="233" width="61" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="test1!@#"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rE0-0D-VFv">
-                                <rect key="frame" x="148" y="537" width="78" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="시험해볼래요"/>
-                            </button>
+                            </pageControl>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bEd-qe-xh3" secondAttribute="bottom" id="AB9-3K-Tes"/>
+                            <constraint firstItem="bEd-qe-xh3" firstAttribute="leading" secondItem="VYt-DT-U3k" secondAttribute="leading" id="HLy-R0-LXl"/>
+                            <constraint firstItem="bEd-qe-xh3" firstAttribute="top" secondItem="A9W-TA-8Bu" secondAttribute="top" id="eq0-Xd-qcN"/>
+                            <constraint firstItem="bEd-qe-xh3" firstAttribute="trailing" secondItem="VYt-DT-U3k" secondAttribute="trailing" id="nMf-36-sJm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VYt-DT-U3k"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImg" destination="bEd-qe-xh3" id="2Ic-ni-oF3"/>
+                        <outlet property="pageControl" destination="f5q-UR-EZZ" id="lOR-X1-baA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wFk-NC-jeK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="632.79999999999995" y="277.51124437781112"/>
+            <point key="canvasLocation" x="720.79999999999995" y="288.30584707646182"/>
+        </scene>
+        <!--Group Page View Controller-->
+        <scene sceneID="cmO-TD-7p8">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" pageSpacing="2" navigationOrientation="horizontal" spineLocation="min" id="lcc-wt-kI0" customClass="GroupPageViewController" customModule="cau_study" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sFK-4D-ckM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="721" y="975"/>
+        </scene>
+        <!--교환과외-->
+        <scene sceneID="SLm-s3-9ax">
+            <objects>
+                <viewController id="nin-0U-71x" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZsG-hb-qfB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="AWA-t2-dcg"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="교환과외" id="kva-Lh-Ydb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9vW-qT-Udg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-332" y="1001"/>
         </scene>
     </scenes>
     <resources>
-        <image name="1231" width="275" height="183"/>
+        <image name="GettyImages-505752040" width="600" height="312"/>
     </resources>
 </document>
