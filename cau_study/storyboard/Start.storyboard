@@ -52,7 +52,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="Dwc-33-e52"/>
                                         </constraints>
-                                        <state key="normal" title="Sign In">
+                                        <state key="normal" title="로그인">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -67,15 +67,16 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Sc8-qD-M6i"/>
                                 </constraints>
-                                <state key="normal" title="Don't have an account?">
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="회원가입 하기">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="VTE-tb-V8W" kind="presentation" id="yL5-bR-z3R"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8p-q5-1YG">
-                                <rect key="frame" x="122" y="111" width="131.5" height="58"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAU study" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8p-q5-1YG">
+                                <rect key="frame" x="114" y="111" width="147" height="58"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -153,7 +154,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="fgc-Ti-06i"/>
                                         </constraints>
-                                        <state key="normal" title="Sign Up">
+                                        <state key="normal" title="회원가입">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -167,7 +168,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="r2Q-Ta-VsS"/>
                                 </constraints>
-                                <state key="normal" title="Already have an account? Sign In">
+                                <state key="normal" title="이미 계정이 있나요?">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
