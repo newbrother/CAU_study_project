@@ -73,7 +73,7 @@
 		E3AC1E7A2031A1D400492885 /* profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
 		E3AC1E7C2031B8DE00492885 /* studyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyViewController.swift; sourceTree = "<group>"; };
 		E3AC1E7E2031C3D400492885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E3C2387D203ACF2A003361B9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		E3C2387D203ACF2A003361B9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E45CDE75B2403FC0F61F9FDD /* Pods-cau_study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cau_study.release.xcconfig"; path = "Pods/Target Support Files/Pods-cau_study/Pods-cau_study.release.xcconfig"; sourceTree = "<group>"; };
 		F7BD0CCB03A50C2632961C23 /* Pods_cau_studyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cau_studyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE94CA95203ADE26007FF31D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
