@@ -11,8 +11,15 @@ import UIKit
 class feedWritingViewController: UIViewController {
     
     
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var CategoryTextField: UITextField!
+    @IBOutlet weak var contentTextView: UITextView!
+    
+    
     @IBAction func cancel_TouchUpInside(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func share_TouchUpInside(_ sender: Any) {
     }
     
     override func viewDidLoad() {

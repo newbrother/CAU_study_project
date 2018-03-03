@@ -28,7 +28,11 @@
                                                 <action selector="cancel_TouchUpInside:" destination="6lh-rF-19H" id="Wco-Oi-UhF"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Item" id="g5r-68-nkq"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Share" id="g5r-68-nkq">
+                                            <connections>
+                                                <action selector="share_TouchUpInside:" destination="6lh-rF-19H" id="f2x-ls-xOK"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -120,6 +124,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="E1l-ym-eor"/>
                     </view>
+                    <connections>
+                        <outlet property="CategoryTextField" destination="RWl-JT-Sgk" id="W8v-LH-nLi"/>
+                        <outlet property="contentTextView" destination="QQf-ir-kfY" id="XYd-UA-yj0"/>
+                        <outlet property="titleTextField" destination="jyz-ih-ENe" id="ral-Qc-wmW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hha-pd-AzE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
