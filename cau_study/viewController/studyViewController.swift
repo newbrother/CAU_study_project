@@ -13,32 +13,40 @@ class studyViewController: UIViewController {
     @IBOutlet weak var backgroundImg: UIImageView!
     @IBOutlet weak var pageControl: UIPageControl!
     
+    var index = 0
+    var imageFileName = ""
+    var content = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        backgroundImg.image = UIImage(named: imageFileName)
+        
+        pageControl.currentPage = index
+        switch index {
+        case 0...1:
+            forwardBtn.setImage(UIImage(named: "arrow.png"), for: UIControlState.normal)
+        case 2:
+            forwardBtn.setImage(UIImage(named: "doneIcon.png"), for: UIControlState.normal)
+        default:
+            break
+        }
         // Do any additional setup after loading the view.
     }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.tabBarController?.tabBar.isHidden = true
-        self.navigationItem.title = "스터디그룹"
-    }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func nextBtn_TouchUpInside(_ sender: Any) {
+        switch index {
+        case 0...1:
+            let pageVC = parent as! WalkthroughViewController
+            pageVC.forward(index: index)
+        case 2:
+            
+            let defaults = UserDefaults.standard
+            defaults.set(true, forKey: "hasViewedWalkthrough")
+            
+            dismiss(animated: true, completion: nil)
+        default:
+            print("")
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

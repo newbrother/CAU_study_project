@@ -8,7 +8,10 @@
 
 import UIKit
 
-class GroupPageViewController: UIPageViewController {
+class GroupPageViewController: UIPageViewController, UIPageViewControllerDataSource {
+    
+    var pageContent = ["test1","test2","test3"]
+    var pageImage = ["Unknown","Unknown12","toktok_art_-1"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +24,11 @@ class GroupPageViewController: UIPageViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        var index = (viewController as! studyViewController).index
+        index += 1
+        return viewControllerAtindex(index: index)
+    }
 
     /*
     // MARK: - Navigation
